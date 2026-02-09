@@ -6,12 +6,12 @@ dotenv.config({
 })
 
 console.log("MONGO_URI:", process.env.MONGO_URI);
-connectDB()
+connectDB();
 
 // ( async ()=>{
 //     try {
 //         await mongoose.connect(`${process.env.MONGO_URI}/${DB_NAME}`);
-//         console.log("Connected to MongoDB");
+//         console.log("Connected to Mongo_DB");
 //         app.on("error",(error)=>{
 //             console.log("ERRR:", error);
 //             throw error;
